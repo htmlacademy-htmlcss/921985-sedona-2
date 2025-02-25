@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Dmitry Larionov](https://up.htmlacademy.ru/htmlcss-individual/2/user/921985).
-* Наставник: `Неизвестно`.
+- Студент: [Dmitry Larionov](https://up.htmlacademy.ru/htmlcss-individual/2/user/921985).
+- Наставник: [Кенан Агаев](https://htmlacademy.ru/profile/kenakula).
 
 ---
 
