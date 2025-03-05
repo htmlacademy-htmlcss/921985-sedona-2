@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a href="https://htmlacademy.ru/" class="logo-link"><img src="#" alt="Логотип Седона" class="logo-img"/></a>
         <ul class="navigation-menu">
@@ -35,12 +35,12 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
-      <section class="main-page-img">
+    <main class="main-content" data-test="main">
+      <section class="main-page-img" data-test="hero">
         <h1 class="visually-hidden">Сайт о городе Седона в штате Аризона. Преимущества, поиск гостиниц</h1>
         <img class="main-page-img-description" src="#" alt="Добро пожаловать в Седону"/> <!-- Вставляем картинку с текстом. Бэкраунд для блока сделаем фоновым изображением -->
       </section>
-      <section class="sedona-advantages">
+      <section class="sedona-advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p class="sedona-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="sedona-reason">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -88,13 +88,13 @@
           </li>
         </ul>
       </section>
-      <section class="sedona-hotels">
+      <section class="sedona-hotels" data-test="search">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="sedona-description">Заинтересовались?</p>
         <p class="sedona-reason">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="catalog.html" class="search-sedona-hotels-button">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="sedona-mailing">
+      <section class="sedona-mailing" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку от Седоны</h2>
         <p class="sedona-description mailing">Подпишитесь на рассылку</p>
         <p class="sedona-reason mailing">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -105,7 +105,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <h2 class="visually-hidden">Контактная информация HTML Academy</h2>
       <ul class="footer-social-links">
         <li class="footer-social-links-item">
