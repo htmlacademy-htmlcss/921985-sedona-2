@@ -8,7 +8,9 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a href="https://htmlacademy.ru/" class="logo-link"><img src="#" alt="Логотип Седона" class="logo-img"/></a>
+        <a href="https://htmlacademy.ru/" class="logo-link">
+          <img src="#" alt="Логотип Седона" class="logo-img"/>
+        </a>
         <ul class="navigation-menu">
           <li class="navigation-menu-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -22,7 +24,9 @@
         </ul>
         <ul class="navigation-menu navigation-user">
           <li class="navigation-menu-item">
-            <a class="navigation-link navigation-link-search" href="#"><span class="visually-hidden">Поиск на сайте</span></a>
+            <a class="navigation-link navigation-link-search" href="#">
+              <span class="visually-hidden">Поиск на сайте</span>
+            </a>
           </li>
           <li class="navigation-menu-item">
             <a class="navigation-link navigation-link-products" href="#">
@@ -31,14 +35,14 @@
             </a>
           </li>
           <li class="navigation-menu-item">
-            <a class="navigation-link navigation-link-authorization" href="#"><span class="visually-hidden">Авторизация на сайте</span>Хочу сюда!</a> <!-- Кажется, что все-таки кнопка для формы авторизации -->
+            <a class="navigation-link navigation-link-authorization" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-content">
-      <header class="catalog-header">
-        <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+      <section class="catalog-hotels" data-test="filter">
+         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         <ul class="page-links">
           <li class="page-links-item">
             <a class="page-links-item-home" href="index.html"></a>
@@ -47,8 +51,6 @@
             <a class="page-links-item-hotels">Гостиницы</a>
           </li>
         </ul>
-      </header>
-      <section class="catalog-hotels" data-test="filter">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <form class="serch-hotels-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="catalog-filter-group">
@@ -68,6 +70,10 @@
             <label class="filter" for="start-price">от<input class="catalog-filter-group-field" type="number" id="start-price" name="start-price" placeholder="0"/></label>
             <label class="filter" for="finish-price">до<input class="catalog-filter-group-field" type="number" id="finish-price" name="finish-price" placeholder="9000"/></label>
           </fieldset>
+          <div class="catalog-filter-slider">
+            <input type="range" min="0" max="9000" step="1" value="0">
+            <input type="range" min="0" max="9000" step="1" value="9000">
+          </div>
           <button class="search-hotels-form-button apply-button" type="submit">Применить</button>
           <button class="search-hotels-form-button reset-button" type="reset">Сбросить</button>
         </form>
@@ -99,8 +105,10 @@
         </ul>
         <ul class="hotel-cards">
           <li class="hotel-cards-item">
+            <a class="hotel-cards-item-link" href="#">
             <img class="hotel-cards-item-img" src="#" alt="Фотография гостиницы"/>
             <h3 class="hotel-cards-item-title">Amara Resort & Spa</h3>
+            </a>
             <p class="hotel-description">Гостиница</p>
             <p class="hotel-price">От 4000 ₽</p>
             <a class="button button-description" href="#">подробнее</a>
@@ -111,8 +119,10 @@
             <p class="button button-rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-cards-item">
+            <a class="hotel-cards-item-link" href="#">
             <img class="hotel-cards-item-img" src="#" alt="Фотография гостиницы"/>
             <h3 class="hotel-cards-item-title">Villas at Poco Diablo</h3>
+            </a>
             <p class="hotel-description">Гостиница</p>
             <p class="hotel-price">От 5000 ₽</p>
             <a class="button button-description" href="#">подробнее</a>
@@ -123,8 +133,10 @@
             <p class="button button-rating">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-cards-item">
+            <a class="hotel-cards-item-link" href="#">
             <img class="hotel-cards-item-img" src="#" alt="Фотография гостиницы"/>
             <h3 class="hotel-cards-item-title">Desert Quail Inn</h3>
+            </a>
             <p class="hotel-description">Гостиница</p>
             <p class="hotel-price">От 2500 ₽</p>
             <a class="button button-description" href="#">подробнее</a>
@@ -135,8 +147,10 @@
             <p class="button button-rating">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-cards-item">
+            <a class="hotel-cards-item-link" href="#">
             <img class="hotel-cards-item-img" src="#" alt="Фотография гостиницы"/>
             <h3 class="hotel-cards-item-title">GreenTree Inn</h3>
+            </a>
             <p class="hotel-description">Гостиница</p>
             <p class="hotel-price">От 1500 ₽</p>
             <a class="button button-description" href="#">подробнее</a>
@@ -198,10 +212,10 @@
           </a>
         </li>
       </ul>
-      <div class="footer-telephone"> <!-- может убрать диф? оставить только ссылку? -->
+      <div class="footer-telephone">
         <a class="footer-telephone-link" href="tel:+78128121212"><span class="visually-hidden">Контактный телефон HTML Academy</span>+7 (812) 812-12-12</a>
       </div>
-      <div class="footer-logo"> <!-- может убрать диф? оставить только ссылку? -->
+      <div class="footer-logo">
         <a href="https://htmlacademy.ru">
           <span class="visually-hidden">Логотип HTML Academy</span>
         </a>
