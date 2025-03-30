@@ -69,6 +69,7 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -150,7 +151,7 @@ body {
 
 .main-page-img {
   background-image: url("../images/index-backgroung.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   background-color: rgba(131, 179, 211, 40%);
@@ -214,10 +215,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 102px 85px 30px 85px;
-}
-
-.sedona-advantages-list-item-img {
-  max-width: 75%;
 }
 
 .sedona-advantages-list-item-border-dark {
@@ -347,6 +344,10 @@ body {
   margin-bottom: 96px;
 }
 
+.search-hotels-result {
+  margin-bottom: 60px;
+}
+
 .sedona-mailing {
   display: flex;
   flex-direction: column;
@@ -371,28 +372,54 @@ body {
   margin-bottom: 104px;
 }
 
+.input-wrapper {
+  width: 684px;
+  display: flex;
+  justify-content: center;
+}
+
 .mailing-input {
+  width: 455px;
   font-family: inherit;
+  font-size: 18px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 20px;
+}
+
+.mailing-input-background {
+  background-color: #f2f2f2;
 }
 
 .subscribe-button {
-  width: 232px;
+  min-width: 232px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   margin: 0;
-  padding: 0;
+  padding: 8px 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .catalog-mailing {
   background-image: none;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 64px;
 }
 
 .catalog-mailing-text {
-  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 54px;
+  padding: 0;
 }
 
 .page-footer {
@@ -408,7 +435,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
 }
 
 .footer-social-links-item {
@@ -428,7 +454,6 @@ body {
   background-image: url("../images/html-academy-footer-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .catalog-hotels {
@@ -484,7 +509,6 @@ body {
 .catalog-filter-group {
   display: flex;
   flex-direction: column;
-
 }
 
 .catalog-filter-group-title {
@@ -536,6 +560,7 @@ body {
   height: 49px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  padding: 0 20px;
 }
 
 .cards-filters {
@@ -578,6 +603,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 15px;
 }
 
@@ -593,19 +619,76 @@ body {
   color: #000000;
 }
 
+.hotel-cards-item-img {
+  width: 100%;
+}
+
 .hotel-cards-item-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-align: left;
+  margin-bottom: 16px;
+}
+
+.hotel-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-description {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.hotel-price {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .button-description {
+  display: inline-block;
   background-color: #756157;
+  padding: 8px 26px;
+}
+
+.hotel-card-description-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-card-buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-card-raiting-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-stars {
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 140px;
+}
+
+.four-stars {
+  background-image: url("../images/stars-4.svg");
+}
+
+.three-stars {
+  background-image: url("../images/stars-3.svg");
+}
+
+.two-stars {
+  background-image: url("../images/stars-2.svg");
 }
 
 .button-favorites {
+  display: inline-block;
   background-color: #82b3d3;
+  padding: 8px 20px;
 }
 
 .button-favorites-add {
@@ -613,10 +696,12 @@ body {
 }
 
 .button-rating {
+  display: inline-block;
   background-color: #f2f2f2;
   color: #333333;
   font-weight: 400;
   line-height: 20px;
+  padding: 9px 22px 8px 23px;
 }
 
 .crossline {
@@ -630,15 +715,23 @@ body {
   padding: 0;
   margin: 40px 70px 60px 70px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #82b3d3;
   width: 60px;
   height: 60px;
   margin-right: 8px;
   border-radius: 4px;
   text-align: center;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-item-link {
