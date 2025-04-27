@@ -191,6 +191,81 @@
         </div>
       </footer>
     </div>
+    <div class="popup-overlay">
+      <section class="popup-container">
+        <div class="popup-title-wrapper">
+          <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
+          <button class="popup-close-button" type="button">
+            <span class="visually-hidden">Закрыть окно поиска гостиниц</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+              <path
+                d="M14.5 1.78 13.2.5l-5.7 5.7L1.77.5.5 1.79l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z" />
+            </svg>
+          </button>
+        </div>
+        <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="popup-form-item popup-form-item-calendar-icon">
+            <label class="popup-label" for="">Дата заезда:</label>
+            <input class="popup-date-field popup-field" id="" type="text" value="27 апреля 2020"
+              placeholder="27 апреля 2020" required>
+          </fieldset>
+          <span class="popup-error-text">Мы не можем отправить вас в прошлое.</span>
+          <fieldset class="popup-form-item popup-form-item-calendar-icon">
+            <label class="popup-label" for="">Дата выезда:</label>
+            <input class="popup-date-field popup-field" type="text" value="1 сентября 2023"
+              placeholder="1 сентября 2023" required>
+          </fieldset>
+          <span class="popup-info-text">На эти даты есть свободные номера. Пока есть.</span>
+          <fieldset class="popup-form-item popup-form-person-group-wrapper">
+            <div class="popup-adult-wrapper">
+              <label class="popup-label" for="">Взрослые:</label>
+              <div class="popup-adult-input-wrapper">
+                <button class="popup-numbers-icon-wrapper minus-icon-wrapper">
+                  <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                    <path d="M0 0v2h14V0H0Z" />
+                  </svg>
+                </button>
+                <input class="popup-field popup-person-field" type="number" value="2" placeholder="2" name="">
+                <button class="popup-numbers-icon-wrapper plus-icon-wrapper">
+                  <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="popup-children-wrapper">
+              <label class="popup-label" for="">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                    <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <span class="tooltip-description">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </span>
+              </span>
+              <div class="popup-children-input-wrapper">
+                <button class="popup-numbers-icon-wrapper minus-icon-wrapper">
+                  <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                    <path d="M0 0v2h14V0H0Z" />
+                  </svg>
+                </button>
+                <input class="popup-field popup-person-field" type="number" value="2" placeholder="2" name="">
+                <button class="popup-numbers-icon-wrapper plus-icon-wrapper">
+                  <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <button class="popup-search-hotels-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
   </body>
 
 </html>

@@ -54,9 +54,6 @@
                 <a class="page-links-item-home" href="index.html"></a>
               </li>
               <li class="page-links-item">
-                <a class="page-links-item-arrow" href="#"></a>
-              </li>
-              <li class="page-links-item">
                 <a class="page-links-item-hotels">Гостиницы</a>
               </li>
             </ul>
@@ -79,24 +76,44 @@
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-group-title">Тип жилья:</legend>
-                <label class="filter"><input class="filter-check input-radio" type="radio" name="type-hotels"
-                    value="hotel" checked />Гостиница</label>
-                <label class="filter"><input class="filter-check input-radio" type="radio" name="type-hotels"
-                    value="motel" />Мотель</label>
-                <label class="filter"><input class="filter-check input-radio" type="radio" name="type-hotels"
-                    value="apartments" />Апартаменты</label>
+                <label class="filter">
+                  <input class="filter-check input-radio" type="radio" name="type-hotels" value="hotel"
+                    checked />Гостиница
+                </label>
+                <label class="filter">
+                  <input class="filter-check input-radio" type="radio" name="type-hotels" value="motel" />Мотель
+                </label>
+                <label class="filter">
+                  <input class="filter-check input-radio" type="radio" name="type-hotels"
+                    value="apartments" />Апартаменты
+                </label>
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-group-title">Стоимость, ₽:</legend>
                 <div class="filter-price-wrapper">
-                  <label class="filter" for="start-price"><input class="catalog-filter-group-field start-price"
-                      type="number" id="start-price" name="start-price" placeholder="0" /></label>
-                  <label class="filter" for="finish-price"><input class="catalog-filter-group-field finish-price"
-                      type="number" id="finish-price" name="finish-price" placeholder="9000" /></label>
+                  <label class="filter" for="start-price">
+                    <div class="start-price-wrapper">
+                      <input class="catalog-filter-group-field start-price" type="number" id="start-price"
+                        name="start-price" placeholder="0" value="0" />
+                    </div>
+                  </label>
+                  <label class="filter" for="finish-price">
+                    <div class="finish-price-wrapper">
+                      <input class="catalog-filter-group-field finish-price" type="number" id="finish-price"
+                        name="finish-price" placeholder="9000" value="9000" />
+                    </div>
+                  </label>
                 </div>
                 <div class="slider">
-                  <button class="slider-button slider-button-min" type="button"></button>
-                  <button class="slider-button slider-button-max" type="button"></button>
+                  <div class="slider-inner-wrapper">
+                    <span class="slider-inner-wrapper-line"></span>
+                    <button class="slider-button slider-button-min" type="button">
+                      <span class="visually-hidden">Кнопка установки минимальной стоимости</span>
+                    </button>
+                    <button class="slider-button slider-button-max" type="button">
+                      <span class="visually-hidden">Кнопка установки максимальной стоимости</span>
+                    </button>
+                  </div>
                 </div>
               </fieldset>
               <div class="catalog-filter-group-buttons">
@@ -109,7 +126,7 @@
         <section class="search-hotels-result" data-test="catalog">
           <h2 class="visually-hidden">Результат поиска гостиниц</h2>
           <div class="search-hotels-result-header">
-            <p class="search-hotels-result-sum">Найдено гостиниц: 38</p>
+            <p class="search-hotels-result-sum">Найдено гостиниц:&nbsp;<span>38</span></p>
             <div class="sorting-filters-wrapper">
               <select class="sorting-filters" name="sort" id="sort" aria-label="Сортировка результата поиска гостиниц">
                 <option value="cheaply">Сначала дешевые</option>
@@ -119,17 +136,18 @@
             </div>
             <ul class="cards-filters">
               <li class="cards-filters-item">
-                <a class="cards-filters-item-link tables-link view-selected view-selected-current" href="#">
+                <a class="cards-filters-item-link tables-link view-selected view-selected-current"
+                  href="catalog.html?view=tile">
                   <span class="visually-hidden">Упорядочить результат поиска гостиниц в виде плиток карточек</span>
                 </a>
               </li>
               <li class="cards-filters-item">
-                <a class="cards-filters-item-link card-link view-selected" href="#">
+                <a class="cards-filters-item-link card-link view-selected" href="catalog.html?view=card">
                   <span class="visually-hidden">Упорядочить результат поиска гостиниц по одной карточке</span>
                 </a>
               </li>
               <li class="cards-filters-item">
-                <a class="cards-filters-item-link column-link view-selected" href="#">
+                <a class="cards-filters-item-link column-link view-selected" href="catalog.html?view=list">
                   <span class="visually-hidden">Упорядочить результат поиска гостиниц в виде списка карточек</span>
                 </a>
               </li>
