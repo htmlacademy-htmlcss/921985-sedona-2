@@ -1438,15 +1438,17 @@ body {
 .popup-error-text {
   font-size: 16px;
   color: #ff5757;
-  align-self: center;
+  margin-left: 160px;
   margin-bottom: 23px;
+  padding-right: 10px;
 }
 
 .popup-info-text {
   font-size: 16px;
   color: #333333;
-  align-self: center;
+  margin-left: 160px;
   margin-bottom: 23px;
+  padding-right: 10px;
 }
 
 .popup-search-hotels-button {
@@ -1650,6 +1652,11 @@ body {
 
 .tooltip-button:hover + .tooltip-description {
   display: block;
+}
+
+.tooltip-button:focus {
+  outline: 1px solid #82b3d3;
+  border: none;
 }
 
 .tooltip-button:focus + .tooltip-description {
