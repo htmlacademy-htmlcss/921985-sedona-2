@@ -12,7 +12,7 @@
     <div class="page-wrapper">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="logo-img" href="index.html" class="logo-link">
+          <a class="logo-img logo-link" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона" />
           </a>
           <ul class="navigation-menu">
@@ -205,27 +205,28 @@
         </div>
         <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="popup-form-item popup-form-item-calendar-icon">
-            <label class="popup-label" for="">Дата заезда:</label>
-            <input class="popup-date-field popup-field" id="" type="text" value="27 апреля 2020"
-              placeholder="27 апреля 2020" required>
+            <label class="popup-label" for="date-checkin">Дата заезда:</label>
+            <input class="popup-date-field popup-field" id="date-checkin" name="date-of-checkin" type="text"
+              value="27 апреля 2020" placeholder="27 апреля 2020" required>
           </fieldset>
           <span class="popup-error-text">Мы не можем отправить вас в прошлое.</span>
           <fieldset class="popup-form-item popup-form-item-calendar-icon">
-            <label class="popup-label" for="">Дата выезда:</label>
-            <input class="popup-date-field popup-field" type="text" value="1 сентября 2023"
-              placeholder="1 сентября 2023" required>
+            <label class="popup-label" for="date-checkout">Дата выезда:</label>
+            <input class="popup-date-field popup-field" id="date-checkout" name="date-of-checkout" type="text"
+              value="1 сентября 2023" placeholder="1 сентября 2023" required>
           </fieldset>
           <span class="popup-info-text">На эти даты есть свободные номера. Пока есть.</span>
           <fieldset class="popup-form-item popup-form-person-group-wrapper">
             <div class="popup-adult-wrapper">
-              <label class="popup-label" for="">Взрослые:</label>
+              <label class="popup-label" for="adults-input">Взрослые:</label>
               <div class="popup-adult-input-wrapper">
                 <button class="popup-numbers-icon-wrapper minus-icon-wrapper">
                   <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
                     <path d="M0 0v2h14V0H0Z" />
                   </svg>
                 </button>
-                <input class="popup-field popup-person-field" type="number" value="2" placeholder="2" name="">
+                <input class="popup-field popup-person-field" id="adults-input" type="number" value="2" placeholder="2"
+                  name="adults">
                 <button class="popup-numbers-icon-wrapper plus-icon-wrapper">
                   <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
@@ -234,7 +235,7 @@
               </div>
             </div>
             <div class="popup-children-wrapper">
-              <label class="popup-label" for="">Дети:</label>
+              <label class="popup-label" for="childs-input">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-button" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
@@ -253,7 +254,8 @@
                     <path d="M0 0v2h14V0H0Z" />
                   </svg>
                 </button>
-                <input class="popup-field popup-person-field" type="number" value="2" placeholder="2" name="">
+                <input class="popup-field popup-person-field" id="childs-input" type="number" value="2" placeholder="2"
+                  name="childs">
                 <button class="popup-numbers-icon-wrapper plus-icon-wrapper">
                   <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
