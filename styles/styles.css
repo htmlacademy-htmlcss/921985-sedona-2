@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -90,6 +90,10 @@ body {
   padding: 0 16px;
 }
 
+/* .navigation-user-item {
+  padding: 12px 11px;
+} */
+
 .navigation-menu-link-current {
   padding-bottom: 17px;
   border-bottom: 2px solid #756257;
@@ -135,7 +139,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  padding: 9px 34px;
+  padding: 8px 34px;
 }
 
 .navigation-link-switch:hover {
@@ -161,22 +165,25 @@ body {
   display: block;
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
-  width: 20px;
+  width: 44px;
   height: 20px;
+
 }
 
 .navigation-link-favorites {
   display: block;
-  width: 18px;
-  height: 17px;
+  width: 50px;
+  height: 19px;
   background-image: url("../images/favorites.svg");
   background-repeat: no-repeat;
+  text-decoration: none;
+
 }
 
 .favorites-products {
   position: relative;
-  top: -16px;
-  left: 10px;
+  top: -15px;
+  left: 8px;
   border-radius: 10px;
   background-color: #7db54f;
   color: #ffffff;
@@ -200,7 +207,7 @@ body {
 
 .main-page-img-description {
   margin-top: 51px;
-  margin-bottom: 82px;
+  margin-bottom: 79px;
 }
 
 .sedona-advantages {
@@ -218,14 +225,14 @@ body {
   text-transform: uppercase;
   color: #000000;
   width: 650px;
-  margin: 69px 0 25px 0;
+  margin: 69px 0 25px;
 }
 
 .sedona-reason {
   font-size: 22px;
   line-height: 26px;
   margin-top: 0;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
   padding: 0 100px;
 }
 
@@ -250,7 +257,7 @@ body {
 .sedona-advantages-list-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 102px 85px;
+  padding: 100px 85px;
   width: 400px;
   box-sizing: border-box;
   align-items: center;
@@ -276,6 +283,10 @@ body {
   margin-bottom: 30px;
 }
 
+.advantages-title-light {
+  padding: 12px;
+}
+
 .advantages-title-light::after {
   content: "";
   display: block;
@@ -284,7 +295,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 
 .sedona-advantages-list-item-text {
@@ -308,12 +319,12 @@ body {
 .title-services-block {
   width: 505px;
   text-align: center;
-  margin-top: 64px;
+  margin-top: 77px;
   margin-bottom: 20px;
 }
 
 .text-services-block {
-  margin-bottom: 64px;
+  margin-bottom: 39px;
 }
 
 .sedona-services {
@@ -359,7 +370,7 @@ body {
 .housing-title::before {
   content: url("../images/icon-1.svg");
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .housing-text {
@@ -369,7 +380,7 @@ body {
 .foods-title::before {
   content: url("../images/icon-2.svg");
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .foods-text {
@@ -379,7 +390,7 @@ body {
 .souvenirs-title::before {
   content: url("../images/icon-3.svg");
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .souvenirs-text {
@@ -394,7 +405,7 @@ body {
 }
 
 .hotels-title {
-  margin-top: 96px;
+  margin-top: 94px;
   margin-bottom: 20px;
 }
 
@@ -413,7 +424,7 @@ body {
   color: #ffffff;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.4);
-  padding: 96px 250px 104px;
+  padding: 25px 250px 104px;
 }
 
 .search-sedona-hotels-button {
@@ -421,7 +432,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  width: 376px;
+  width: 360px;
   margin-bottom: 96px;
 }
 
@@ -444,16 +455,8 @@ body {
   background-color: #e5e5e5;
 }
 
-.search-hotels-result {
-  margin-bottom: 60px;
-}
-
 .mailing {
   color: #ffffff;
-}
-
-.mailing-title {
-  margin-bottom: 20px;
 }
 
 .mailing-text {
@@ -462,7 +465,7 @@ body {
 }
 
 .input-wrapper {
-  width: 684px;
+  width: 682px;
   display: flex;
   justify-content: center;
 }
@@ -504,7 +507,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   margin: 0;
-  padding: 8px 50px;
+  padding: 8px 42px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -523,12 +526,17 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.subscribe-button:disabled {
+  background-color: #e5e5e5;
+}
+
 .catalog-mailing {
   background-image: none;
   background-color: #ffffff;
   color: #000000;
   margin: 0;
   margin-bottom: 20px;
+  padding-top: 48px;
 }
 
 .catalog-mailing-text {
@@ -635,7 +643,7 @@ body {
 }
 
 .catalog-hotels-wrapper {
-  padding: 35px 70px 70px;
+  padding: 35px 69px 56px;
 }
 
 .catalog-header-title {
@@ -748,7 +756,7 @@ body {
   background: #ffffff;
   margin: 0;
   padding: 0;
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .filter-check:hover {
@@ -793,23 +801,23 @@ body {
 
 .filter-price-wrapper {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-group-field {
-  width: 100px;
+  width: 166px;
   border: none;
   margin-right: 2px;
   background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 35px 12px 20px;
+  padding: 13px 0 11px 15px;
 }
 
 .catalog-filter-group-field::-webkit-outer-spin-button,
 .catalog-filter-group-field::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -916,7 +924,7 @@ body {
   justify-content: center;
   width: 191px;
   margin: 56px 0 32px;
-  padding: 10px 50px;
+  padding: 10px;
 }
 
 .apply-button:hover {
@@ -940,7 +948,7 @@ body {
 }
 
 .reset-button {
-  width: 191px;
+  width: 200px;
   background-color: transparent;
 }
 
@@ -964,6 +972,7 @@ body {
 
 .search-hotels-result {
   padding: 0 70px;
+  margin-bottom: 60px;
 }
 
 .search-hotels-result-header {
@@ -1144,6 +1153,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-description:disabled {
+  background-color: #e5e5e5;
+}
+
 .hotel-stars {
   background-repeat: no-repeat;
   background-position: left;
@@ -1221,7 +1234,7 @@ body {
 .crossline {
   display: block;
   border: 1px solid #e6e6e6;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .pagination {
@@ -1509,7 +1522,7 @@ body {
 
 .popup-person-field::-webkit-outer-spin-button,
 .popup-person-field::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
