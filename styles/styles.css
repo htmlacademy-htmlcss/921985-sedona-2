@@ -347,6 +347,7 @@ body {
 
 .text-services-block {
   margin: 0;
+  margin-bottom: 37px;
 }
 
 .sedona-services {
@@ -368,7 +369,7 @@ body {
   width: 400px;
   list-style: none;
   box-sizing: border-box;
-  padding: 81px 85px;
+  padding: 50px 85px;
   text-align: center;
 }
 
@@ -404,6 +405,7 @@ body {
 
 .housing-text {
   margin: 0;
+  margin-bottom: 26px;
 }
 
 .foods-title {
@@ -442,13 +444,13 @@ body {
 }
 
 .hotels-title {
-  margin-top: 94px;
-  margin-bottom: 2px;
+  margin-top: 97px;
+  margin-bottom: -3px;
 }
 
 .hotels-text {
   width: 600px;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .sedona-mailing {
@@ -470,7 +472,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   width: 376px;
-  margin-bottom: 97px;
+  margin-bottom: 96px;
   letter-spacing: -2px;
 }
 
@@ -1426,8 +1428,8 @@ body {
 }
 
 .popup-container {
-  width: 650px;
-  padding: 64px 70px;
+  width: 578px;
+  padding: 80px 69px;
   background-color: #ffffff;
   margin: auto;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -1435,15 +1437,16 @@ body {
 }
 
 .popup-title-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .popup-title {
   margin: 0;
-  margin-right: 50px;
+  margin-top: -19px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -1461,6 +1464,9 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: absolute;
+  right: -4%;
+  top: -85%;
 }
 
 .popup-close-button:hover {
@@ -1511,10 +1517,6 @@ body {
   cursor: pointer;
 }
 
-.popup-form-person-group-wrapper {
-  margin-bottom: 48px;
-}
-
 .popup-label {
   font-weight: 700;
   font-size: 20px;
@@ -1523,7 +1525,7 @@ body {
 }
 
 .popup-date-field {
-  width: 440px;
+  width: 368px;
   height: 48px;
 }
 
@@ -1531,7 +1533,7 @@ body {
   font-size: 16px;
   color: #ff5757;
   margin-left: 160px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   padding-right: 10px;
 }
 
@@ -1539,12 +1541,11 @@ body {
   font-size: 16px;
   color: #333333;
   margin-left: 160px;
-  margin-bottom: 23px;
-  padding-right: 10px;
+  margin-bottom: 15px;
 }
 
 .popup-search-hotels-button {
-  height: 48px;
+  height: 60px;
   border-radius: 10px;
   border: none;
   background-color: #83b3d3;
@@ -1554,6 +1555,7 @@ body {
   color: #ffffff;
   cursor: pointer;
   padding: 0;
+  margin-top: 48px;
 }
 
 .popup-search-hotels-button:hover {
