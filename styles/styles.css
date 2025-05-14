@@ -54,11 +54,11 @@ body {
   display: flex;
   margin: 0 70px;
   justify-content: space-between;
-  height: 64px;
 }
 
 .logo-link {
   z-index: 1;
+  height: 64px;
 }
 
 .navigation-menu {
@@ -136,6 +136,7 @@ body {
 
 .navigation-link-switch {
   display: block;
+  width: 92px;
   background-color: #756157;
   font-size: 16px;
   font-weight: 700;
@@ -280,7 +281,7 @@ body {
 }
 
 .dark-wrapper {
-  padding: 102px 85px;
+  padding: 101px 85px;
 }
 
 .light-wrapper {
@@ -696,6 +697,12 @@ body {
   margin-right: 28px;
 }
 
+.page-links-item-hotels {
+  cursor: default;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .page-links-item-home {
   display: block;
   background-image: url("../images/switch-pages-icon-home.svg");
@@ -773,6 +780,8 @@ body {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  width: 142px;
 }
 
 .filter:hover {
@@ -849,7 +858,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 13px 45px 11px 19px;
+  padding: 13px 41px 11px 19px;
 }
 
 .catalog-filter-group-field::-webkit-outer-spin-button,
@@ -857,6 +866,11 @@ body {
   appearance: none;
   margin: 0;
 }
+
+.catalog-filter-group-field {
+  appearance: textfield;
+}
+
 
 .catalog-filter-group-field:hover {
   background-color: #e6e6e6;
@@ -964,7 +978,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 187px;
+  width: 191px;
   margin: 54px 0 34px;
   padding: 10px;
   letter-spacing: -1px;
@@ -1589,6 +1603,10 @@ body {
 .popup-person-field::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.popup-person-field {
+  -moz-appearance: textfield;
 }
 
 .popup-field:placeholder-shown {
